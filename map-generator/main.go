@@ -6,13 +6,15 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"sync"
 )
 
 var maps = []struct {
 	Name   string
 	IsTest bool
 }{
+	{Name: "vauban"},
+	// Temporarily comment out other maps to focus on vauban
+	/*
 	{Name: "africa"},
 	{Name: "asia"},
 	{Name: "world"},
@@ -43,6 +45,7 @@ var maps = []struct {
 	{Name: "big_plains", IsTest: true},
 	{Name: "half_land_half_ocean", IsTest: true},
 	{Name: "ocean_and_land", IsTest: true},
+	*/
 	{Name: "plains", IsTest: true},
 }
 
@@ -82,6 +85,7 @@ func processMap(name string, isTest bool) error {
 	}
 
 	inputPath := filepath.Join(inputMapDir, name, "image.png")
+	log.Printf("Reading image file from: %s", inputPath)
 	imageBuffer, err := os.ReadFile(inputPath)
 	if err != nil {
 		return fmt.Errorf("failed to read map file %s: %w", inputPath, err)
@@ -89,6 +93,7 @@ func processMap(name string, isTest bool) error {
 
 	// Read the info.json file
 	manifestPath := filepath.Join(inputMapDir, name, "info.json")
+	log.Printf("Reading info.json file from: %s", manifestPath)
 	manifestBuffer, err := os.ReadFile(manifestPath)
 	if err != nil {
 		return fmt.Errorf("failed to read info file %s: %w", manifestPath, err)
@@ -101,6 +106,7 @@ func processMap(name string, isTest bool) error {
 	}
 
 	// Generate maps
+	log.Printf("Generating map for %s...", name)
 	result, err := GenerateMap(GeneratorArgs{
 		ImageBuffer: imageBuffer,
 		RemoveSmall: !isTest, // Don't remove small islands for test maps
@@ -148,27 +154,11 @@ func processMap(name string, isTest bool) error {
 }
 
 func loadTerrainMaps() error {
-	var wg sync.WaitGroup
-	errChan := make(chan error, len(maps))
-
-	// Process maps concurrently
+	// Process maps sequentially for debugging
 	for _, mapItem := range maps {
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			if err := processMap(mapItem.Name, mapItem.IsTest); err != nil {
-				errChan <- err
-			}
-		}()
-	}
-
-	// Wait for all goroutines to complete
-	wg.Wait()
-	close(errChan)
-
-	// Check for errors
-	for err := range errChan {
-		if err != nil {
+		log.Printf("Processing map: %s", mapItem.Name)
+		if err := processMap(mapItem.Name, mapItem.IsTest); err != nil {
+			log.Printf("Error processing map %s: %v", mapItem.Name, err)
 			return err
 		}
 	}
