@@ -12,7 +12,8 @@ var maps = []struct {
 	Name   string
 	IsTest bool
 }{
-	{Name: "vauban"},
+	{Name: "annecy"},
+	{Name: "paris"},
 	// Temporarily comment out other maps to focus on vauban
 	/*
 	{Name: "africa"},

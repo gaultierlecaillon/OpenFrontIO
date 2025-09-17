@@ -1,0 +1,77 @@
+{
+  "name": "Annecy",
+  "nations": [
+    {
+      "coordinates": [250, 100],
+      "name": "Annecy",
+      "strength": 2,
+      "flag": "baguette"
+    },
+    {
+      "coordinates": [275, 525],
+      "name": "Sevrier",
+      "strength": 3,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [400, 600],
+      "name": "Saint-Jorioz",
+      "strength": 2,
+      "flag": "ch"
+    },
+    {
+      "coordinates": [575, 700],
+      "name": "Duingt",
+      "strength": 4,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [675, 650],
+      "name": "Talloires",
+      "strength": 2,
+      "flag": "baguette"
+    },
+    {
+      "coordinates": [600, 580],
+      "name": "Menthon-Saint-Bernard",
+      "strength": 3,
+      "flag": "ch"
+    },
+    {
+      "coordinates": [560, 900],
+      "name": "Doussard",
+      "strength": 4,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [450, 250],
+      "name": "Veyrier-du-Lac",
+      "strength": 2,
+      "flag": "baguette"
+    },
+    {
+      "coordinates": [325, 50],
+      "name": "Annecy-le-Vieux",
+      "strength": 5,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [400, 50],
+      "name": "Argonay",
+      "strength": 1,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [950, 350],
+      "name": "La Clusaz",
+      "strength": 1,
+      "flag": "fr"
+    },
+    {
+      "coordinates": [100, 950],
+      "name": "Les Bauges",
+      "strength": 1,
+      "flag": "fr"
+    }
+  ]
+}

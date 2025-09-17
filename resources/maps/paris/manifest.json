@@ -1,0 +1,141 @@
+{
+  "map": {
+    "height": 2000,
+    "num_land_tiles": 3818112,
+    "width": 2000
+  },
+  "mini_map": {
+    "height": 1000,
+    "num_land_tiles": 952796,
+    "width": 1000
+  },
+  "name": "Paris",
+  "nations": [
+    {
+      "coordinates": [455, 1115],
+      "flag": "fr",
+      "name": "Saint-germain",
+      "strength": 2
+    },
+    {
+      "coordinates": [1780, 640],
+      "flag": "baguette",
+      "name": "Montmartre",
+      "strength": 5
+    },
+    {
+      "coordinates": [320, 1540],
+      "flag": "fr",
+      "name": "Le Marais",
+      "strength": 3
+    },
+    {
+      "coordinates": [1220, 410],
+      "flag": "ch",
+      "name": "Latin Quarter",
+      "strength": 1
+    },
+    {
+      "coordinates": [940, 1860],
+      "flag": "baguette",
+      "name": "Belleville",
+      "strength": 4
+    },
+    {
+      "coordinates": [620, 1320],
+      "flag": "fr",
+      "name": "Bastille",
+      "strength": 2
+    },
+    {
+      "coordinates": [1750, 1550],
+      "flag": "ch",
+      "name": "Champs-Élysées",
+      "strength": 5
+    },
+    {
+      "coordinates": [150, 980],
+      "flag": "baguette",
+      "name": "Pigalle",
+      "strength": 3
+    },
+    {
+      "coordinates": [1370, 1220],
+      "flag": "fr",
+      "name": "Opéra",
+      "strength": 1
+    },
+    {
+      "coordinates": [480, 300],
+      "flag": "ch",
+      "name": "Canal Saint-Martin",
+      "strength": 4
+    },
+    {
+      "coordinates": [890, 710],
+      "flag": "fr",
+      "name": "La Villette",
+      "strength": 5
+    },
+    {
+      "coordinates": [1960, 450],
+      "flag": "baguette",
+      "name": "Les Halles",
+      "strength": 2
+    },
+    {
+      "coordinates": [300, 450],
+      "flag": "fr",
+      "name": "Ménilmontant",
+      "strength": 1
+    },
+    {
+      "coordinates": [1420, 1780],
+      "flag": "ch",
+      "name": "Grenelle",
+      "strength": 4
+    },
+    {
+      "coordinates": [1100, 1340],
+      "flag": "fr",
+      "name": "Auteuil",
+      "strength": 3
+    },
+    {
+      "coordinates": [650, 210],
+      "flag": "baguette",
+      "name": "Batignolles",
+      "strength": 5
+    },
+    {
+      "coordinates": [1580, 870],
+      "flag": "fr",
+      "name": "Père Lachaise",
+      "strength": 2
+    },
+    {
+      "coordinates": [470, 1740],
+      "flag": "ch",
+      "name": "Passy",
+      "strength": 4
+    },
+    {
+      "coordinates": [1920, 1290],
+      "flag": "fr",
+      "name": "La Défense",
+      "strength": 5
+    },
+    {
+      "coordinates": [820, 560],
+      "flag": "baguette",
+      "name": "Châtelet",
+      "strength": 1
+    },
+    {
+      "coordinates": [200, 1600],
+      "flag": "fr",
+      "name": "Madeleine",
+      "strength": 3
+    }
+  ]
+}

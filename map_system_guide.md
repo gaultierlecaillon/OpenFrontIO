@@ -202,6 +202,7 @@ The map generator uses specific RGB values to determine terrain types:
   - Example: RGB(0, 0, 106) or RGBA(0, 0, 106, 255)
 
 - **Land Elevation**:
+
   - The blue channel value between 140-200 determines the terrain elevation
   - Plains: Blue channel 140-150 (e.g., RGB(any, any, 140-150))
   - Highlands: Blue channel 150-170 (e.g., RGB(any, any, 150-170))
@@ -209,6 +210,8 @@ The map generator uses specific RGB values to determine terrain types:
   - Example for plains: RGB(190, 220, 145)
   - Example for highlands: RGB(200, 183, 160)
   - Example for mountains: RGB(230, 230, 185)
+
+  water: 00006a
 
 Note that while the red and green channels can be any value, the map generator primarily uses the blue channel for terrain determination. The actual rendering colors in the game will be different from these input colors.
 

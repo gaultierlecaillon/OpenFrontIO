@@ -35,6 +35,8 @@ export const MapDescription: Record<keyof typeof GameMapType, string> = {
   Yenisei: "Yenisei",
   Pluto: "Pluto",
   Vauban: "Vauban",
+  Annecy: "Annecy",
+  Paris: "Paris",
 };
 
 @customElement("map-display")
